@@ -1,0 +1,14 @@
+:root {
+  --font:
+    "Microsoft YaHei", "PingFang SC", "Noto Sans SC", system-ui, sans-serif;
+  --text: #fff2e0;
+  --muted: #d0c3df;
+  --gold: #ffdda1;
+  --glass: linear-gradient(135deg, #454a70ed, #65536ce8);
+  --border: #d9c1e39e;
+  --selected: linear-gradient(135deg, #ffc77c, #ff995e 58%, #f5ad7c);
+  --gold-glow: inset 0 0 10px #fff2b8b3, 0 0 15px #ffb85f8c, 0 0 30px #ffad4940;
+  --panel-shadow: inset 0 1px 8px #d3d4ff2e, 0 8px 26px #1d1d3b55;
+  --radius-lg: 26px;
+  --radius-md: 16px;
+}

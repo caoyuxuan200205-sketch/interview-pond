@@ -1,0 +1,16 @@
+node_modules/
+dist/
+*.tsbuildinfo
+*.log
+.env*
+
+!.env.example
+data/
+backups/
+build-backup*/
+/.tools/
+/.workbuddy/
+/supabase/.temp/
+*.sqlite
+*.sqlite-*
+/启动公网演示.cmd

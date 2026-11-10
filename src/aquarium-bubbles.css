@@ -1,0 +1,31 @@
+.aquarium-bubbles {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  user-select: none;
+  clip-path: inset(174px 105px 140px 90px round 24px);
+  contain: layout paint;
+}
+.water-bubble {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  border-radius: 50%;
+  opacity: 0;
+  border: 1px solid #d4eefe91;
+  background: radial-gradient(ellipse at 28% 22%, #fff8e9e0 0 5%, #ffffff00 17%), radial-gradient(ellipse at 74% 79%, #f6b8e46b, #ffffff00 44%);
+  box-shadow: inset 1px 1px 2px #dffaff88, inset -1px -1px 2px #c9acff8c, 0 0 3px #97dff526;
+  will-change: transform, opacity;
+}
+.water-bubble::after {
+  content: '';
+  position: absolute;
+  inset: 14% 17% 36% 12%;
+  border-radius: 50%;
+  border-top: 1px solid #fff4dbbf;
+  transform: rotate(-28deg);
+}
+.reduced-motion .aquarium-bubbles { display: none; }
+@media (prefers-reduced-motion: reduce) { .aquarium-bubbles { display: none; } }
